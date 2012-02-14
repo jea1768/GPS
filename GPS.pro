@@ -1,9 +1,9 @@
 TARGET = GPS
 QT += network
-QT -= gui
+#QT -= gui 
 HEADERS += GPSListener.h
 SOURCES += GPSListener.cpp  main.cpp
 FORMS += 
 RESOURCES += 
-# Pour Qt-4.8.x
+# Pour Qt-4.8.x, voir qcoreapplication.h
 QMAKE_CXXFLAGS += -DQT_BUILD_CORE_LIB
