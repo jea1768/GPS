@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+#include <QtCore/QCoreApplication>
 #include "GPSListener.h"
 
 /*
@@ -83,6 +83,7 @@ main()
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+    
     if ( argc < 2 )
     {
     	std::cout << "Nom device manquant ! (/dev/ttyUSBx, /dev/cuaUx, ...)\n";
